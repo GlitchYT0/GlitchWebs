@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glitch - Oyun & YouTube</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 20px 30px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0, 255, 150, 0.3);
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #00ffa2;
+      letter-spacing: 2px;
+    }
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 15px 0;
+    }
+    nav a {
+      color: #00ffa2;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #66ffb3;
+    }
+    main {
+      flex: 1;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    section {
+      background: #1e1e1e;
+      border-radius: 12px;
+      padding: 25px 30px;
+      box-shadow: 0 0 15px #00ffa2;
+      flex: 1 1 400px;
+      min-width: 300px;
+    }
+    h2 {
+      color: #00ffb3;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #00ffb3;
+      padding-bottom: 5px;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      background: #121212;
+      margin-bottom: 12px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #00ffb3;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-weight: 600;
+      color: #00ffa2;
+    }
+    ul li:hover {
+      background: #00ffa266;
+    }
+    ul li[title] {
+      cursor: default;
+      color: #999;
+      font-style: italic;
+      box-shadow: none;
+      background: transparent;
+    }
+    .email {
+      margin-top: 15px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #00ffa2;
+      word-break: break-all;
+      user-select: text;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    footer {
+      background: #1f1f1f;
+      color: #555;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media(max-width: 850px) {
+      main {
+        flex-direction: column;
+        margin: 20px;
+      }
+      section {
+        min-width: auto;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Glitch - Oyun & YouTube</header>
+  <nav>
+    <a href="#about">Hakkımda</a>
+    <a href="#oynadiklarim">Oynadıklarım</a>
+    <a href="#contact">İletişim</a>
+  </nav>
+  <main>
+    <section id="about">
+      <h2>Hakkımda</h2>
+      <p>
+        Selam kral! Ben Glitch, YouTube'da oyun oynayıp içerik üreten bir gamer ve yazılımcıyım.<br />
+        GTA, Brawl Stars gibi oyunlarda yeteneklerimi sergiliyor, eğlenceli videolar çekiyorum.<br />
+        Amacım oyun dünyasını eğlenceli ve saygılı bir şekilde yaymak!
+      </p>
+    </section>
+
+    <section id="oynadiklarim">
+      <h2>Oynadıklarım</h2>
+      <ul>
+        <li><a href="#" style="color: inherit; text-decoration: none;">Portal 1</a></li>
+        <li><a href="#" style="color: inherit; text-decoration: none;">GTA San Andreas</a></li>
+        <li title="Uzun süredir oynamadım ama efsanedir">Need for Speed (Uzun süredir oynamadım ama)</li>
+        <li><a href="#" style="color: inherit; text-decoration: none;">Zula</a></li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>İletişim</h2>
+      <p>Benimle iş birliği, öneri vb. eşylerde şu e-postaya mail atabilirsiniz:</p>
+      <p class="email">dstkglitch@gmail.com</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Glitch. Tüm hakları saklıdır.
+  </footer>
+</body>
+</html>
